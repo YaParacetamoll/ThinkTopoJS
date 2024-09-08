@@ -10,8 +10,6 @@ var topology = {
           {
             source:"g0/0",
             target:"g0/0",
-            status:"down"
-
           },
         ]
       },
