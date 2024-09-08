@@ -1,0 +1,45 @@
+var topology = {
+  "focus_node":{
+    type:"router",
+    hostname:"R-1",
+    connects:[
+      {
+      hostname:"R-2",
+        type:"router",
+        interfaces:[
+          {
+            source:"g0/0",
+            target:"g0/0",
+            status:"down"
+
+          },
+        ]
+      },
+      {
+      hostname:"R-3",
+        type:"router",
+        interfaces:[
+          {
+            source:"g0/1",
+            target:"g0/0",
+          }
+        ]
+      },
+      {
+          hostname:"S-3",
+          type:"switch",
+          interfaces:[
+            {
+              source:"g1/2",
+              target:"g1/2",
+            },
+            {
+              source:"g1/1",
+              target:"g1/1",
+            }
+          ]
+        },
+      
+    ]
+  }
+}
